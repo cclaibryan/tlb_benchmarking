@@ -254,27 +254,28 @@ void parametric_measure_global(int N, bool finegrained, int stride, set<int> & l
 //only visit the array one time, so the iteration is changed
 __global__ void repeated_visit(unsigned *arr, int length, int stride, bool record, unsigned *duration, double *help) {
 
-    unsigned timestamp;
+    unsigned long start, end;
     unsigned gid = blockDim.x * blockIdx.x + threadIdx.x;
     unsigned curIdx = (blockDim.x * threadIdx.x + blockIdx.x) % length;
 
-    double anc = 0;
+    __shared__ int anc[1024];
+//    double anc = 0;
     double total = 0;
     int myIteration = 0;
 
     //traverse the data array once
     while (curIdx < length) {
-        timestamp = clock();
+        start = clock64();
             curIdx = arr[curIdx];
-            anc += curIdx;                  //to ensure the curIdx has been read, this instruction is 16-cycle long on K40m
-        timestamp = clock() - timestamp - 16;
-        total += timestamp;
+            anc[threadIdx.x] += curIdx;                  //to ensure the curIdx has been read, this instruction is 16-cycle long on K40m
+        end = clock64();
+        total += (end-start-16);
         myIteration++;
     }
 
     if (record)     {
         duration[gid] = (total/myIteration);
-        help[gid] = anc;
+        help[gid] = anc[threadIdx.x];
     }
 }
 
