@@ -10,16 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53618edc-a535-4e24-8fee-2bfbe1f1430e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/running.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tlb_GPU" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tlb_GPU.cu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tlb_GPU_52" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tlb_benchmark_52" afterPath="$PROJECT_DIR$/tlb_benchmark_52" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tlb_latency_52" afterPath="$PROJECT_DIR$/tlb_latency_52" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compile.sh" afterPath="$PROJECT_DIR$/compile.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_130MB.log" afterPath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_130MB.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_2048MB.log" afterPath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_2048MB.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_2MB.log" afterPath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_2MB.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_4096MB.log" afterPath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_4096MB.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/running_Kepler_Maxwell.sh" afterPath="$PROJECT_DIR$/running_Kepler_Maxwell.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/running_Pascal.sh" afterPath="$PROJECT_DIR$/running_Pascal.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tlb_latency.cu" afterPath="$PROJECT_DIR$/tlb_latency.cu" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,16 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tlb_latency.cu" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tlb_latency.cu">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-139">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="running_Kepler_Maxwell.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/running_Kepler_Maxwell.sh">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,8 +51,18 @@
       <file leaf-file-name="tlb_benchmark.cu" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tlb_benchmark.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1056">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="-1104">
+              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tlb_latency.cu" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tlb_latency.cu">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3120">
+              <caret line="130" column="51" lean-forward="true" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -96,6 +93,7 @@
       <find>generate_strided</find>
       <find>data:</find>
       <find>N</find>
+      <find>help</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,9 +121,9 @@
         <option value="$PROJECT_DIR$/tlb_GPU.cu" />
         <option value="$PROJECT_DIR$/compile.sh" />
         <option value="$PROJECT_DIR$/tlb_benchmark.cu" />
-        <option value="$PROJECT_DIR$/tlb_latency.cu" />
         <option value="$PROJECT_DIR$/running_Kepler_Maxwell.sh" />
         <option value="$PROJECT_DIR$/running_Pascal.sh" />
+        <option value="$PROJECT_DIR$/tlb_latency.cu" />
       </list>
     </option>
   </component>
@@ -205,11 +203,12 @@
       <workItem from="1514805191819" duration="3834000" />
       <workItem from="1514856438829" duration="3534000" />
       <workItem from="1515648348501" duration="16118000" />
+      <workItem from="1515737992981" duration="1059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97429000" />
+    <option name="totallyTimeSpent" value="98488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -246,7 +245,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu">
+    <entry file="file://$PROJECT_DIR$/running_Kepler_Maxwell.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -254,31 +253,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu">
+    <entry file="file://$PROJECT_DIR$/running_Pascal.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="312">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu">
+    <entry file="file://$PROJECT_DIR$/tlb_benchmark.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/compile.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="59" lean-forward="false" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu" />
+    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu" />
+    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu" />
     <entry file="file://$PROJECT_DIR$/running.sh" />
-    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -293,13 +296,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu" />
     <entry file="file://$PROJECT_DIR$/warp_tlb_CPU.cpp" />
     <entry file="file://$PROJECT_DIR$/tlb_N_GPU.cu" />
     <entry file="file://$PROJECT_DIR$/warp_tlb_NGPU.cu" />
@@ -325,14 +322,7 @@
     <entry file="file://$PROJECT_DIR$/130MB/TLB_in_grid.log" />
     <entry file="file://$PROJECT_DIR$/2MB/TLB_in_grid.log" />
     <entry file="file://$PROJECT_DIR$/running.sh" />
-    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5247">
-          <caret line="223" column="34" lean-forward="true" selection-start-line="223" selection-start-column="34" selection-end-line="223" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tlb_GPU.cu" />
     <entry file="file://$PROJECT_DIR$/compile.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -359,16 +349,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tlb_benchmark.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1056">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state relative-caret-position="-1104">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tlb_latency.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="3120">
+          <caret line="130" column="51" lean-forward="true" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
           <folding />
         </state>
       </provider>

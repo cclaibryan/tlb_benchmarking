@@ -9,10 +9,10 @@ using namespace std;
 #define KB                      (1024/sizeof(int))
 #define MB                      (KB*1024)
 #define MAX_NUM_THREADS         (1024)      // a block has maximal thread size
-#define EXPER_TIME              (10)        //experiments are repeated 10 times
+#define EXPER_TIME              (1)        //experiments are repeated 10 times
 
 //kernel function
-__global__ void strided_access(unsigned *arr, int length, int stride, bool record, unsigned *duration, double *help);           //used to attain the average cycle of the multi-threaded kernel
+__global__ void strided_access(unsigned *arr, int length, int stride, bool record, unsigned *duration, unsigned *help);           //used to attain the average cycle of the multi-threaded kernel
 
 void TLB_latency(int N, int stride);
 void generate_strided(unsigned *arr, int length, int stride);
@@ -49,23 +49,23 @@ int main(int argc, char* argv[]){
 }
 
 //multi-threaded kernels
-__global__ void strided_access(unsigned *arr, int length, int stride, bool record, unsigned *duration, double *help) {
+__global__ void strided_access(unsigned *arr, int length, int stride, bool record, unsigned *duration, unsigned *help) {
 
-    unsigned long start, end;
+    unsigned long timestamp;
     unsigned gid = blockDim.x * blockIdx.x + threadIdx.x;
     unsigned curIdx = (gid* (stride+100)) % length;         //adding an offset in case that only a few elements are accessed
 
-    double anc = 0;
+    unsigned anc = 0;
     double total = 0;
 
     //repeated visit, run fixed iterations
-    start = clock64();
+    timestamp = clock64();
     for (int i = 0; i < ITERATIONS; i++) {
         curIdx = arr[curIdx];
         anc += curIdx;                  //to ensure the curIdx has been read, this instruction is 16-cycle long on K40m
     }
-    end = clock64();
-    total += (end-start);
+    timestamp = clock64() - timestamp;
+    total += timestamp;
 
     if (record)     {
         duration[gid] = total/ITERATIONS-16;    //deduce the register add instruction overhead
@@ -83,7 +83,7 @@ void TLB_latency(int N, int stride) {
     cudaError_t error_id;
     unsigned *h_a, *d_a;
     unsigned *h_timeinfo, *d_timeinfo;
-    double *help;
+    unsigned *help;
 
     h_a = (unsigned*)malloc(sizeof(unsigned)*N);
     error_id = cudaMalloc ((void **) &d_a, sizeof(unsigned)*N);
@@ -100,7 +100,7 @@ void TLB_latency(int N, int stride) {
     error_id = cudaMalloc((void **) &d_timeinfo, sizeof(unsigned) * numThreadsGlobal * numBlocksGlobal);
     if (error_id != cudaSuccess)    cerr << "Error 1.2 is " << cudaGetErrorString(error_id) << endl;
 
-    error_id = cudaMalloc((void **) &help, sizeof(double) * numThreadsGlobal * numBlocksGlobal);
+    error_id = cudaMalloc((void **) &help, sizeof(unsigned) * numThreadsGlobal * numBlocksGlobal);
     if (error_id != cudaSuccess)    cerr << "Error 1.3 is " << cudaGetErrorString(error_id) << endl;
 
     cudaThreadSynchronize();
