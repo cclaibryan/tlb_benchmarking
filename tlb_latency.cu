@@ -9,7 +9,7 @@ using namespace std;
 #define KB                      (1024/sizeof(int))
 #define MB                      (KB*1024)
 #define MAX_NUM_THREADS         (1024)      // a block has maximal thread size
-#define EXPER_TIME              (1)        //experiments are repeated 10 times
+#define EXPER_TIME              (10)        //experiments are repeated 10 times
 
 //kernel function
 __global__ void strided_access(unsigned *arr, int length, int stride, bool record, unsigned *duration, unsigned *help);           //used to attain the average cycle of the multi-threaded kernel

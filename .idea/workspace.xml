@@ -10,10 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53618edc-a535-4e24-8fee-2bfbe1f1430e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_block_130MB.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_block_2048MB.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_block_2MB.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_block_4096MB.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tlb_benchmark_52" afterPath="$PROJECT_DIR$/tlb_benchmark_52" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tlb_latency_52" afterPath="$PROJECT_DIR$/tlb_latency_52" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compile.sh" afterPath="$PROJECT_DIR$/compile.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_130MB.log" afterPath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_130MB.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_2048MB.log" afterPath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_2048MB.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_2MB.log" afterPath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_2MB.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_4096MB.log" afterPath="$PROJECT_DIR$/logs/Maxwell/MultiThread/TLB_in_grid_4096MB.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/running_Kepler_Maxwell.sh" afterPath="$PROJECT_DIR$/running_Kepler_Maxwell.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/running_Pascal.sh" afterPath="$PROJECT_DIR$/running_Pascal.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tlb_latency.cu" afterPath="$PROJECT_DIR$/tlb_latency.cu" />
@@ -52,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/tlb_benchmark.cu">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1104">
-              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,8 +69,8 @@
       <file leaf-file-name="tlb_latency.cu" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tlb_latency.cu">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3120">
-              <caret line="130" column="51" lean-forward="true" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
+            <state relative-caret-position="624">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -203,12 +211,12 @@
       <workItem from="1514805191819" duration="3834000" />
       <workItem from="1514856438829" duration="3534000" />
       <workItem from="1515648348501" duration="16118000" />
-      <workItem from="1515737992981" duration="1059000" />
+      <workItem from="1515737992981" duration="2455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98488000" />
+    <option name="totallyTimeSpent" value="99884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -350,15 +358,15 @@
     <entry file="file://$PROJECT_DIR$/tlb_benchmark.cu">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1104">
-          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tlb_latency.cu">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3120">
-          <caret line="130" column="51" lean-forward="true" selection-start-line="130" selection-start-column="51" selection-end-line="130" selection-end-column="51" />
+        <state relative-caret-position="624">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
